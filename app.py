@@ -103,12 +103,6 @@ else:
     data['northwest']=0
 
 
-st.write("""
-         
-         ### Data transform
-         
-         """
-         )
 
 
 
@@ -118,7 +112,7 @@ model=joblib.load("insurence_model.pkl")
 
 data=data.drop(['Region'],axis='columns')
 
-st.write(data)
+
 
 
 if st.button(label='Predicted'):
