@@ -17,7 +17,7 @@ from PIL import Image
 st.write("""
          
          # Predicted insurence
-         ##### By Amado de Jesus Vázquez Acuña
+         ##### By Amado de Jesus Vazquez Acuña
          
          """
          
