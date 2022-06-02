@@ -100,7 +100,7 @@ def ohe(new_data):
 
 def rescale(new_data,old_data):
     
-    return (new_data)-(np.min(old_data))/ (np.max(old_data))-(np.min(old_data))
+    return ((new_data)-(np.min(old_data)))/ ((np.max(old_data))-(np.min(old_data)))
 
 
 # In[34]:
