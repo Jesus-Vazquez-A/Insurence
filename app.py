@@ -165,22 +165,3 @@ if st.button(label='Predicted'):
     st.write(pred)
 
 
-# In[107]:
-
-
-for col in ["BMI","Age"]:
-    
-    new_data[col]=rescale(new_data=new_data[col],old_data=old_df[col])
-
-
-# In[109]:
-
-
-import numpy as np
-
-
-# In[110]:
-
-
-np.min()
-
