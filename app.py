@@ -53,7 +53,7 @@ def old_data():
     
     # Cargamos el dataframe viejo. Para poder rescalar los nuevos datos ingresados por el usuario.
     
-    old_data=pd.read_csv("C:\\Users\\PC\\Desktop\\Seguro\\insurence_clear")
+    old_data=pd.read_csv("insurence_clear")
     old_data=old_data.drop(["Unnamed: 0"],axis="columns")
 
     
@@ -122,7 +122,7 @@ def preprocess(new_data):
 # Realizar predicciones
 def predict(new_data):
     
-    model=joblib.load("C:\\Users\\PC\\Desktop\\Seguro\\gbr_insurence.pkl") #  Importamos el modelo que habíamos entrenado.
+    model=joblib.load("gbr_insurence.pkl") #  Importamos el modelo que habíamos entrenado.
     
     return  model.predict(new_data)
     
