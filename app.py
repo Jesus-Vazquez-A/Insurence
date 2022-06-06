@@ -6,7 +6,7 @@
 
 import pandas as pd
 import streamlit as st
-from sklearn.preprocessing import MinMaxScaler
+import sklearn
 import numpy as np
 import joblib
 
@@ -100,7 +100,7 @@ def ohe(new_data):
 ## Rescalado para varaibles continuas
 def rescale(new_data):
     
-    min_max_scaler=MinMaxScaler()
+    min_max_scaler=sklearn.preprocessing.MinMaxScaler()
     min_max_scaler.fit(old_data)
     new_data[["Age","BMI","Children"]]=min_max_scaler.transform(new_data[["Age","BMI","Children"]])
     
