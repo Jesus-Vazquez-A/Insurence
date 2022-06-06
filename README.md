@@ -28,3 +28,7 @@ To later use it to create an application and upload it to herouku.
 ### Important notes.
 
 The jupyter notebooks are in html format. For which you will have to download the compressed files. Praa be able to view it on your compute
+
+### Link app
+
+https://insurence-app-predict.herokuapp.com/
