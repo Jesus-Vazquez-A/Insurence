@@ -3,6 +3,7 @@
 ### Definition of the problem.
 
 Create a machine learning algorithm with the goal of estimating the health insurance charges.
+To later use it to create an application and upload it to herouku.
 
 ### Features of dataset.
 
