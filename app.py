@@ -87,7 +87,7 @@ def preprocess(new_data):
 
 def predict(new_data):
     
-    model=joblib.load("C:\\Users\\PC\\Desktop\\Seguro\\xgb_insurence.pkl") 
+    model=joblib.load("xgb_insurence.pkl") 
     
     return  model.predict(new_data)
     
