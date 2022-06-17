@@ -7,7 +7,6 @@ Created on Fri Jun 17 14:22:52 2022
 
 import pandas as pd
 import streamlit as st
-import numpy as np
 import joblib
 
 
