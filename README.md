@@ -18,15 +18,15 @@ To later use it to create an application and upload it to herouku.
 ### Project composition
 
 
-* Exploratory analysis.    We understand the nature of data
+* **Exploratory analysis.**    We understand the nature of data
 
-* Feature Engineering.     We remove or transform the outliers
+* **Feature Engineering.**     We remove or transform the outliers
 
-* Search for the right model.   We make comparisons between different models. As well as looking for the best combination of parameters. We will use the MAR as a performance metric, since it is less sensitive to outliers and what we are looking for is a model that generalizes well.
+* **Search for the right model.**   We make comparisons between different models. As well as looking for the best combination of parameters. We will use the MAR as a performance metric, since it is less sensitive to outliers and what we are looking for is a model that generalizes well.
 
-* Definitive model.   Create the best model again. And we save it for later use.
+* **Definitive model.**   Create the best model again. And we save it for later use.
 
-* App in  Streamlit.  We use streamlit which is a specialized library for data science. That allows us to create applications easily.
+* **App in  Streamlit.**  We use streamlit which is a specialized library for data science. That allows us to create applications easily.
 
 
 
