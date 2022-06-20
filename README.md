@@ -25,9 +25,6 @@ To later use it to create an application and upload it to herouku.
 * App in  Streamlit.  We use streamlit which is a specialized library for data science. That allows us to create applications easily.
 
 
-### Important notes.
-
-The jupyter notebooks are in html format. For which you will have to download the compressed files. Praa be able to view it on your compute
 
 ### Link app
 
