@@ -46,13 +46,13 @@ class Preprocessing_OHE():
 
 def input_data():
     
-    age=st.sidebar.slider(label="Age",min_value=18,max_value=64,step=1),
+    age=st.slider(label="Age",min_value=18,max_value=64,step=1),
     
     sex=st.selectbox("Sex",("Male","Female")),
     
-    bmi=st.sidebar.slider(label="BMI",min_value=18.0,max_value=47.0,step=0.0001),
+    bmi=st.slider(label="BMI",min_value=18.0,max_value=47.0,step=0.0001),
     
-    children=st.sidebar.slider(label="Children",min_value=0,max_value=5,step=1),
+    children=st.slider(label="Children",min_value=0,max_value=5,step=1),
     
     smoker=st.selectbox("Smoker",("Yes","No")),
     
