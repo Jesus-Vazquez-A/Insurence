@@ -57,7 +57,7 @@ Finally you **create a web application** with the streamlit library. And we uplo
 
 ### GIF Proyect
 
-<img src="https://media.giphy.com/media/BileRHL3JLUMtG4vH5/giphy.gif" width=600>
+<img src="https://media.giphy.com/media/BileRHL3JLUMtG4vH5/giphy.gif" width=350>
 
 ### Link app
 
