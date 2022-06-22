@@ -55,6 +55,9 @@ As the penultimate step. We **created the definitive model**, the XGBoost for th
 
 Finally you **create a web application** with the streamlit library. And we uploaded to a free server in the United States on Heroku, since it favors geographical location.
 
+### GIF
+
+<img src="https://media.giphy.com/media/BileRHL3JLUMtG4vH5/giphy.gif" width=350>
 
 ### Link app
 
