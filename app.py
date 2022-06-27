@@ -22,21 +22,21 @@ class Preprocessing_OHE():
     
     def binary(self):
         
-        self.new_data["Sex"]=self.new_data["Sex"].apply(lambda x: 1 if x == "male"  else 0)
-        self.new_data["Smoker"]=self.new_data["Smoker"].apply(lambda x: 1 if x == "yes"  else 0)
+        self.new_data["Sex"]=self.new_data["Sex"].apply(lambda x: 1 if x == "Male"  else 0)
+        self.new_data["Smoker"]=self.new_data["Smoker"].apply(lambda x: 1 if x == "Yes"  else 0)
         
         return self.new_data
     
     def multinomial(self):
         
         
-        self.new_data["Region_southeast"]=self.new_data["Region"].apply(lambda x: 1 if x == "southeast" else 0)
+        self.new_data["Region_southeast"]=self.new_data["Region"].apply(lambda x: 1 if x == "Southeast" else 0)
         
-        self.new_data["Region_northeast"]=self.new_data["Region"].apply(lambda x: 1 if x == "northeast" else 0)
+        self.new_data["Region_northeast"]=self.new_data["Region"].apply(lambda x: 1 if x == "Northeast" else 0)
         
-        self.new_data["Region_southwest"]=self.new_data["Region"].apply(lambda x: 1 if x == "southwest" else 0)
+        self.new_data["Region_southwest"]=self.new_data["Region"].apply(lambda x: 1 if x == "Southwest" else 0)
         
-        self.new_data["Region_northwest"]=self.new_data["Region"].apply(lambda x: 1 if x == "northwest" else 0)
+        self.new_data["Region_northwest"]=self.new_data["Region"].apply(lambda x: 1 if x == "Northwest" else 0)
         
         
         return   self.new_data.drop(["Region"],axis="columns")
@@ -56,7 +56,7 @@ def input_data():
     
     smoker=st.selectbox("Smoker",("Yes","No")),
     
-    region=st.selectbox("Region",('southeast', 'northeast', 'southwest', 'northwest'))
+    region=st.selectbox("Region",('Southeast', 'Northeast', 'Southwest', 'Northwest'))
   
     return age,sex,bmi,children,smoker,region
 
