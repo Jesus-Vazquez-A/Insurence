@@ -113,7 +113,7 @@ def main():
         pred=predict(new_data)
         
     
-        st.write(" Predicted : {}".format(pred))
+        st.write(" Predicted $  US dollars: {}".format(pred))
 
 if __name__ == "__main__":
     
