@@ -64,7 +64,7 @@ def input_data():
     
     smoker=st.select_slider("Smoker",("No","Yes")),
     
-    region=st.select_slider("Region",('Southeast', 'Northeast', 'Southwest', 'Northwest'))
+    region=st.selectbox("Region",('Southeast', 'Northeast', 'Southwest', 'Northwest'))
   
     return age,sex,bmi,children,smoker,region
 
