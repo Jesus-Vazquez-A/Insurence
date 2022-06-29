@@ -17,7 +17,7 @@ st.write(""" # Predicted Insurence Price """)
 
 
 
-image = Image.open("C:\\Users\\PC\\Desktop\\Ciencias de datos\\Proyectos\\Seguro\\Proyect-Insurence-Steps\\insurence_img.jpg")
+image = Image.open("insurence_img.jpg")
 
 st.image(image)
 
@@ -94,7 +94,7 @@ def preprocess(new_data):
 
 def predict(new_data):
     
-    model=joblib.load("C:\\Users\\PC\\Desktop\\Ciencias de datos\\Proyectos\\Seguro\\Proyect-Insurence-Steps\\xgb_insurence.pkl") 
+    model=joblib.load("xgb_insurence.pkl") 
     
     return model.predict(new_data)
     
