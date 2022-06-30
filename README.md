@@ -77,15 +77,29 @@ We create 3 regression algorithms:
 
 * **Ensemble algorithms:** Gradient Boosting and XGBoost are some algorithms that belong to this category. These algorithms work using weaker algorithms, usually decision trees. That each time they are improving with respect to the learning rate and the number of estimators,one of the main differences is that XGBoost can be executed through a GPU, something that allows faster training. 
 
-![Captura de pantalla (66)](https://user-images.githubusercontent.com/85312561/176789617-8f9aea02-c54c-42a0-806b-792ae67e7178.png)
 
 For the assembly algorithms, we perform various analyzes.
 
+## **Number of estimators Gradient Boosting**
+
+![Captura de pantalla (65)](https://user-images.githubusercontent.com/85312561/176790286-860eb0c2-d892-49eb-bf3d-992e9b898a76.png)
+
+
+
+## **Number of estimators XGBoost
+
+
+![Captura de pantalla (66)](https://user-images.githubusercontent.com/85312561/176790304-18363367-e2a5-4e71-b18d-a9f6fb9d5b8f.png)
+
 We use the same parameters for XGBoost and Gradient Boosting.
+
 
 * max_depth:  It refers to the maximum depth of the decision tree. For the first evaluation we use a maximum depth of 2 and in the second of 3.
 * n_estimators: Number of decision trees. The range of estimators we used was from 100 to 1000.
 * learing_rate: It is the room for improvement for each iteration. We use a learning rate of 0.01
+
+
+
 
 
     
