@@ -90,7 +90,8 @@ For the assembly algorithms, we perform various analyzes.
 ## **Number of estimators XGBoost**
 
 
-![Captura de pantalla (66)](https://user-images.githubusercontent.com/85312561/176790304-18363367-e2a5-4e71-b18d-a9f6fb9d5b8f.png)
+![xgb_estimators](https://user-images.githubusercontent.com/85312561/176790541-625db0aa-d35b-4f37-9bd0-bb8cb4f68293.png)
+
 
 We use the same parameters for XGBoost and Gradient Boosting.
 
