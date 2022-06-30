@@ -114,19 +114,14 @@ We use the same parameters for XGBoost and Gradient Boosting.
 
 * CV: Cross Validation consists of calculating the generalization average of the model.
 
-### **Graphic Illustration**
+Both models have quite similar metrics. But XGBoost has better results for test data, which is the data that matters to us. Since they are values that the model does not use to train, but it makes good predictions.
+
+### **Graphic Visualization Models.**
 
 ![evaluation_plot](https://user-images.githubusercontent.com/85312561/176791917-021c2ae8-229a-4ad1-a922-af9d78040e5d.png)
 
     
-* The polyno
-* R^2 mial model gives excellent predictions for non-smokers, while its counterpart gives mediocre predictions.
 
-* Gradient Boosting suits both cases very well.
-
-* XGBoost is better than Gradient Boosting, has a lower MSE for validation data, and is faster.
-
-After several analyzes we conclude that the best model is the XGBoost. Since more number of estimators can be used, it minimizes the MSE and has fewer symptoms of overfitting.
 
 
 
