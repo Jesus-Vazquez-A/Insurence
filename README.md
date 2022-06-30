@@ -80,17 +80,6 @@ We create 3 regression algorithms:
 
 For the assembly algorithms, we perform various analyzes.
 
-## **Number of estimators Gradient Boosting**
-
-![n_estimators_gbr](https://user-images.githubusercontent.com/85312561/176790393-25e0b4ea-4e1e-4cd1-b6c0-3f215c615a4d.png)
-
-
-
-
-## **Number of estimators XGBoost**
-
-
-![xgb_estimators](https://user-images.githubusercontent.com/85312561/176790541-625db0aa-d35b-4f37-9bd0-bb8cb4f68293.png)
 
 
 We use the same parameters for XGBoost and Gradient Boosting.
@@ -101,6 +90,18 @@ We use the same parameters for XGBoost and Gradient Boosting.
 * learing_rate: It is the room for improvement for each iteration. We use a learning rate of 0.01
 
 
+## **Number of estimators Gradient Boosting**
+
+
+![n_estimators_gbr](https://user-images.githubusercontent.com/85312561/176790757-27ead64b-ba03-4842-b98b-987c6f0d78cf.png)
+
+
+
+
+## **Number of estimators XGBoost**
+
+
+![xgb_estimators](https://user-images.githubusercontent.com/85312561/176790541-625db0aa-d35b-4f37-9bd0-bb8cb4f68293.png)
 
 
 
