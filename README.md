@@ -46,7 +46,7 @@ The main challenge will be the treatment of outliers. Since we cannot eliminate 
 
 # Project summary.
 
-* **Approach**
+## **Approach**
 
 Feature engineering consists of dealing with missing values or outliers. Where an optimal treatment for such data is found, this step is very important for the performance of the model. Since it is the data that we are going to give to train the model.
 
@@ -61,7 +61,7 @@ They have a significant advantage over replacing it with a basic statistical mea
 For smokers, since there were few outliers, we decided to replace them with normal values close to the highest values, within the normal range.
 
 
-* **Model Interpretation**
+## **Model Interpretation**
 
 For both models, we use the same variables.
 We apply data rescaling process, although for assembly models it is not necessary. Since these algorithms work through decision trees, they use mathematical inequalities.
@@ -90,7 +90,7 @@ We use the same parameters for XGBoost and Gradient Boosting.
 * **learing_rate:** It is the room for improvement for each iteration. We use a learning rate of 0.01
 
 
-## **Number of Estimators Gradient Boosting**
+### **Number of Estimators Gradient Boosting**
 
 
 ![n_estimators_gbr](https://user-images.githubusercontent.com/85312561/176790757-27ead64b-ba03-4842-b98b-987c6f0d78cf.png)
@@ -98,7 +98,7 @@ We use the same parameters for XGBoost and Gradient Boosting.
 
 
 
-## **Number of Estimators XGBoost**
+### **Number of Estimators XGBoost**
 
 
 ![xgb_estimators](https://user-images.githubusercontent.com/85312561/176790541-625db0aa-d35b-4f37-9bd0-bb8cb4f68293.png)
@@ -127,7 +127,7 @@ Both models have quite similar metrics. But XGBoost has better results for test 
 * **XGBoost:**  It has good predictions for both groups. It has a better MSE than Gradient Boosting and is faster when it comes to training. Because it can be trained using GPUs something that will greatly speed up the training.
 
 
-## **Opening the Black Box**
+### **Opening the Black Box**
 
 ### **Feature Importance**
 
@@ -146,7 +146,9 @@ Variables such as the number of children of the insured, as well as gender and r
 
 However, we leave them, since they can complement the value of the predictions. Since as I mentioned earlier, humans only rely on relevant variables, while machines use these variables and complement them with variables that at first glance can be irrelevant. But that positively impact the value of the prediction.
 
-* **Results:**  The XGBoost model performs extraordinarily well for smokers and non-smokers, unlike the polynomial model that did not give good results for the group of smokers. It also has the advantage of not requiring data rescaling. Since they work based on decision trees that use mathematical inequalities in the form of questions. At the same time, it is a very fast model since it can be trained by dedicated graphics cards. What can I expect from a very powerful algorithm and winner of several Kaggle competitions.
+## **Results**
+
+ The XGBoost model performs extraordinarily well for smokers and non-smokers, unlike the polynomial model that did not give good results for the group of smokers. It also has the advantage of not requiring data rescaling. Since they work based on decision trees that use mathematical inequalities in the form of questions. At the same time, it is a very fast model since it can be trained by dedicated graphics cards. What can I expect from a very powerful algorithm and winner of several Kaggle competitions.
 
 
 
