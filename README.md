@@ -82,11 +82,12 @@ For the assembly algorithms, we perform various analyzes.
 
 ## **Number of estimators Gradient Boosting**
 
-![Captura de pantalla (65)](https://user-images.githubusercontent.com/85312561/176790286-860eb0c2-d892-49eb-bf3d-992e9b898a76.png)
+![n_estimators_gbr](https://user-images.githubusercontent.com/85312561/176790393-25e0b4ea-4e1e-4cd1-b6c0-3f215c615a4d.png)
 
 
 
-## **Number of estimators XGBoost
+
+## **Number of estimators XGBoost**
 
 
 ![Captura de pantalla (66)](https://user-images.githubusercontent.com/85312561/176790304-18363367-e2a5-4e71-b18d-a9f6fb9d5b8f.png)
