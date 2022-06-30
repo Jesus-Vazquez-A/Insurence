@@ -63,21 +63,45 @@ For smokers, since there were few outliers, we decided to replace them with norm
 
 * **Model Interpretation**
 
+For both models, we use the same variables.
+We apply data rescaling process, although for assembly models it is not necessary. Since these algorithms work through decision trees, they use mathematical inequalities.
+
+We do not discriminate any variable, although in the EDA. We found that the variables smoker, age and bmi influence the cost of health insurance.
+
+Although it could eliminate variables such as gender and region. I didn't want to remove it as the difference between humans and algorithms. It is that we take the most important variables, while the algorithms use these variables and complement them with other variables in which they find unknown patterns. They favor the quality of the prediction.
+
 We create 3 regression algorithms:
 
 * **Polynomial Regression:**  It consists of raising the predictor variables to a certain power. In order for the model to have better predictions than a linear regression.
 
 
-* **Ensemble algorithms:** Gradient Boosting and XGBoost are some algorithms that belong to this category. These algorithms work using weaker algorithms, usually decision trees. That each time they are improving with respect to the learning rate and the number of estimators,one of the main differences is that XGBoost can be executed through a GPU, something that allows faster training.  601 / 5.000
+* **Ensemble algorithms:** Gradient Boosting and XGBoost are some algorithms that belong to this category. These algorithms work using weaker algorithms, usually decision trees. That each time they are improving with respect to the learning rate and the number of estimators,one of the main differences is that XGBoost can be executed through a GPU, something that allows faster training. 
+
+![Captura de pantalla (66)](https://user-images.githubusercontent.com/85312561/176789617-8f9aea02-c54c-42a0-806b-792ae67e7178.png)
+
+For the assembly algorithms, we perform various analyzes.
+
+We use the same parameters for XGBoost and Gradient Boosting.
+
+* max_depth:  It refers to the maximum depth of the decision tree. For the first evaluation we use a maximum depth of 2 and in the second of 3.
+* n_estimators: Number of decision trees. The range of estimators we used was from 100 to 1000.
+* learing_rate: It is the room for improvement for each iteration. We use a learning rate of 0.01
 
 
-We evaluate each ensemble algorithm up to 1000 estimators. We compare the estimator with respect to the root mean square error, which is a metric that measures the average error between the original and predicted values. I realized that for both cases with a maximum depth of 3 for each estimator it suffers more overfitting, that is to say that the model decreases for the error rate for the training data, while for the test data it remains almost the same. Upon further analysis, XGBoost is less prone to overfitting and has a lower MSE than Gradient Boosting.
     
 * The polynomial model gives excellent predictions for non-smokers, while its counterpart gives mediocre predictions.
 
 * Gradient Boosting suits both cases very well.
 
 * XGBoost is better than Gradient Boosting, has a lower MSE for validation data, and is faster.
+
+After several analyzes we conclude that the best model is the XGBoost. Since more number of estimators can be used, it minimizes the MSE and has fewer symptoms of overfitting.
+
+
+
+
+
+
 ### GIF Proyect
 
 <img src="https://media.giphy.com/media/BileRHL3JLUMtG4vH5/giphy.gif" width=350>
