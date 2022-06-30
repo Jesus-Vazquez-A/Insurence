@@ -90,7 +90,7 @@ We use the same parameters for XGBoost and Gradient Boosting.
 * learing_rate: It is the room for improvement for each iteration. We use a learning rate of 0.01
 
 
-## **Number of estimators Gradient Boosting**
+## **Number of Estimators Gradient Boosting**
 
 
 ![n_estimators_gbr](https://user-images.githubusercontent.com/85312561/176790757-27ead64b-ba03-4842-b98b-987c6f0d78cf.png)
@@ -98,15 +98,29 @@ We use the same parameters for XGBoost and Gradient Boosting.
 
 
 
-## **Number of estimators XGBoost**
+## **Number of Estimators XGBoost**
 
 
 ![xgb_estimators](https://user-images.githubusercontent.com/85312561/176790541-625db0aa-d35b-4f37-9bd0-bb8cb4f68293.png)
 
 
+### **DataFrame Evualuation**
+
+![df_evaluation](https://user-images.githubusercontent.com/85312561/176791543-faa2d8b6-5f79-47c3-84f0-7f31a1db8b01.png)
+
+* MSE: Mean square error. It measures the average error between the original value and the predicted value.
+
+* $R^2$ : It measures the degree of adjustment of the predictions with respect to the original value. The closer it is to 1, the closer the original value will be.
+
+* CV: Cross Validation consists of calculating the generalization average of the model.
+
+### **Graphic Illustration**
+
+![evaluation_plot](https://user-images.githubusercontent.com/85312561/176791917-021c2ae8-229a-4ad1-a922-af9d78040e5d.png)
 
     
-* The polynomial model gives excellent predictions for non-smokers, while its counterpart gives mediocre predictions.
+* The polyno
+* R^2 mial model gives excellent predictions for non-smokers, while its counterpart gives mediocre predictions.
 
 * Gradient Boosting suits both cases very well.
 
