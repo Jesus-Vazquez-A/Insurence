@@ -2,9 +2,6 @@
 
 ### Definition of the problem.
 
-Create a machine learning algorithm with the goal of estimating the health insurance charges.
-To later use it to create an application and upload it to herouku.
-
 ### Features of dataset.
 
 * Age  of the insured.
@@ -13,6 +10,24 @@ To later use it to create an application and upload it to herouku.
 * Region User's place of residence.
 * Smoker  Whether the user smokes or not.
 * Charges  Health insurance price.
+
+
+When performing a histogram, we notice the presence of atypical values, that is, values that are out of the norm.
+
+We deduce that these values can have a better explanation if we add more variables.
+
+We create a box and whisker plot where we add the variable smoker. We discovered that it is a variable that greatly influences the price of health insurance.
+
+We also found that if the user is a smoker and has an advanced BMI. The insurance charge increases more, since the insured will have more charges due to his state of health.
+
+The BMI maintains a linear trend relationship compared to the predicted insurance. That is, one value increases proportionally to the other.
+
+The variable age has a strong linear relationship with the variable charges,it does not increase the price of insurance as considerably since most people who smoke are healthier.
+
+But for the group of non-smokers it has a significant number of outliers, The main challenge will be the treatment of outliers. Since we cannot delete them, due to the amount of data we have, we will have to find an ingenious way to deal with them.
+
+The main challenge will be the treatment of outliers. Since we cannot eliminate them, due to the amount of data we have, we'll have to find an ingenious way to deal with them.
+
 
 
 ### Project composition
@@ -31,28 +46,9 @@ To later use it to create an application and upload it to herouku.
 
 # Project summary.
 
-* **Definition of the problem** 
-
-When performing a histogram, we notice the presence of atypical values, that is, values that are out of the norm.
-
-We deduce that these values can have a better explanation if we add more variables.
-
-We create a box and whisker plot where we add the variable smoker. We discovered that it is a variable that greatly influences the price of health insurance.
-
-We also found that if the user is a smoker and has an advanced BMI. The insurance charge increases more, since the insured will have more charges due to his state of health.
-
-The BMI maintains a linear trend relationship compared to the predicted insurance. That is, one value increases proportionally to the other.
-
-
-The variable age has a strong linear relationship with the variable charges,it does not increase the price of insurance as considerably since most people who smoke are healthier.
-
-
-But for the group of non-smokers it has a significant number of outliers, The main challenge will be the treatment of outliers. Since we cannot delete them, due to the amount of data we have, we will have to find an ingenious way to deal with them.
-
-The main challenge will be the treatment of outliers. Since we cannot eliminate them, due to the amount of data we have, we'll have to find an ingenious way to deal with them.
-
 * **Approach**
 
+Feature engineering consists of dealing with missing values or outliers. Where an optimal treatment for such data is found, this step is very important for the performance of the model. Since it is the data that we are going to give to train the model.
 
 We decided to separate the data into smokers and non-smokers, with the aim of giving the data a better treatment.
 
@@ -64,6 +60,16 @@ They have a significant advantage over replacing it with a basic statistical mea
 
 For smokers, since there were few outliers, we decided to replace them with normal values close to the highest values, within the normal range.
 
+
+* **Model Interpretation**
+
+We create 3 regression algorithms:
+
+* **Polynomial Regression:**  It consists of raising the predictor variables to a certain power. In order for the model to have better predictions than a linear regression.
+
+
+* **Ensemble algorithms:** Gradient Boosting and XGBoost are some algorithms that belong to this category. These algorithms work using weaker algorithms, usually decision trees. That each time they are improving with respect to the learning rate and the number of estimators,one of the main differences is that XGBoost can be executed through a GPU, something that allows faster training.
+        [_Vázquez_Amado_R7_U2.pdf](https://github.com/Jesus-Vazquez-A/Insurence/files/9015591/_Vazquez_Amado_R7_U2.pdf)
 
 
 
