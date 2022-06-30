@@ -31,29 +31,42 @@ To later use it to create an application and upload it to herouku.
 
 # Project summary.
 
-We first performed an exploratory analysis. Where we discover that the variable smoker has great weight with the value to predict. We conclude that for non-smokers there is a linear relationship with respect to age and position. That is to say that the value increases proportionally with another, for which the conclusion for the subgroup of **non-smokers** can be solved using a **linear regression**. But for **smokers**, this model will **not be as efficient**, since there is no such relationship.
+* **Definition of the problem** 
 
-In the feature engineering section.
-We divided the dataset into 2 subgroups, the first is for smokers and non-smokers. In order to clean the data more effectively. We calculated an upper range for non-smokers to be $20,000. We filter the data that is not higher than that amount, for the higher data we convert them to null values. 
+When performing a histogram, we notice the presence of atypical values, that is, values that are out of the norm.
 
-We observe in a dispersion graph the variable age with respect to charges. Outliers could still be seen. Therefore, we opted to subdivide the subgroup for smokers. Where we create 3 dataframes for the subgroups that we divide between young, adult and elderly people. We replace outliers for these subgroups with normal values. Later we **create a linear regression model**, to **replace the outliers of the variable charges**. For smokers we replace values above $50,000 dollars with normal values.
+We deduce that these values can have a better explanation if we add more variables.
+
+We create a box and whisker plot where we add the variable smoker. We discovered that it is a variable that greatly influences the price of health insurance.
+
+We also found that if the user is a smoker and has an advanced BMI. The insurance charge increases more, since the insured will have more charges due to his state of health.
+
+The BMI maintains a linear trend relationship compared to the predicted insurance. That is, one value increases proportionally to the other.
 
 
-In the selection of the ideal model. We created 3 regression models, one polynomial, since if we use a linear model it will not help us to describe smokers.
+The variable age has a strong linear relationship with the variable charges,it does not increase the price of insurance as considerably since most people who smoke are healthier.
 
-We use assembly models, that is, models that use other weaker models, which in each iteration improves with respect to the learning rate, similar to how an artificial neural network does. We selected Gradient Boosting and XGBoost, these algorithms have the extra advantage that they do not need to rescale variables, unlike the polynomial, which is needed. We perform an evaluation based on the number of estimators with respect to the MSE.
 
-And we conclude that for both models a **maximum depth of 3**leads to more **overfitting** for the **training data**. While with a **maximum depth of 2** it offers **better performance**. Since the **MSE** of the **training** and **validation** are **almost on a par.**
+But for the group of non-smokers it has a significant number of outliers, The main challenge will be the treatment of outliers. Since we cannot delete them, due to the amount of data we have, we will have to find an ingenious way to deal with them.
 
-* The **Polynomial** model gives **good results** for **smokers**, while the opposite case the **predictions are not so accurate**.
+The main challenge will be the treatment of outliers. Since we cannot eliminate them, due to the amount of data we have, we'll have to find an ingenious way to deal with them.
 
-* **Gradient Boosting** has **good results** for both classes. But it has **more symptoms of overfitting and a higher MSE compared to XGBoost**.
+* **Approach**
 
-* **XGBoost** for this case was **less susceptible to overfitting**. It offers a **smaller MSE** with a similar number of estimators.
 
-As the penultimate step. We **created the definitive model**, the XGBoost for the reasons already mentioned above. We pass exactly the same parameters to the model. Gives the same results. Finally we save the model, to later use it in a web application.
+We decided to separate the data into smokers and non-smokers, with the aim of giving the data a better treatment.
 
-Finally you **create a web application** with the streamlit library. And we uploaded to a free server in the United States on Heroku, since it favors geographical location.
+We apply the central limit theorem, which is a technique used to establish confidence intervals. That is, to select values that follow a normal trend, it is usually used to eliminate outliers. But in this case we calculate the upper interval and transform to missing value those values that exceed the established interval.
+
+As described above, for non-smokers we observed a linear trend with respect to age and position. And I thought why instead of replacing the missing values before, why not create a linear regression model? Train the model with normal values, to later replace the missing values with new values closer to the original value.
+
+They have a significant advantage over replacing it with a basic statistical measure such as the average and the median. Since it could affect the distribution of the data.
+
+For smokers, since there were few outliers, we decided to replace them with normal values close to the highest values, within the normal range.
+
+
+
+
 
 ### GIF Proyect
 
