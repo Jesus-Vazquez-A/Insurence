@@ -68,12 +68,16 @@ We create 3 regression algorithms:
 * **Polynomial Regression:**  It consists of raising the predictor variables to a certain power. In order for the model to have better predictions than a linear regression.
 
 
-* **Ensemble algorithms:** Gradient Boosting and XGBoost are some algorithms that belong to this category. These algorithms work using weaker algorithms, usually decision trees. That each time they are improving with respect to the learning rate and the number of estimators,one of the main differences is that XGBoost can be executed through a GPU, something that allows faster training.
-        [_Vázquez_Amado_R7_U2.pdf](https://github.com/Jesus-Vazquez-A/Insurence/files/9015591/_Vazquez_Amado_R7_U2.pdf)
+* **Ensemble algorithms:** Gradient Boosting and XGBoost are some algorithms that belong to this category. These algorithms work using weaker algorithms, usually decision trees. That each time they are improving with respect to the learning rate and the number of estimators,one of the main differences is that XGBoost can be executed through a GPU, something that allows faster training.  601 / 5.000
 
 
+We evaluate each ensemble algorithm up to 1000 estimators. We compare the estimator with respect to the root mean square error, which is a metric that measures the average error between the original and predicted values. I realized that for both cases with a maximum depth of 3 for each estimator it suffers more overfitting, that is to say that the model decreases for the error rate for the training data, while for the test data it remains almost the same. Upon further analysis, XGBoost is less prone to overfitting and has a lower MSE than Gradient Boosting.
+    
+* The polynomial model gives excellent predictions for non-smokers, while its counterpart gives mediocre predictions.
 
+* Gradient Boosting suits both cases very well.
 
+* XGBoost is better than Gradient Boosting, has a lower MSE for validation data, and is faster.
 ### GIF Proyect
 
 <img src="https://media.giphy.com/media/BileRHL3JLUMtG4vH5/giphy.gif" width=350>
