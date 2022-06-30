@@ -136,7 +136,15 @@ Both models have quite similar metrics. But XGBoost has better results for test 
 
 ![shap_xgb](https://user-images.githubusercontent.com/85312561/176793018-fbd6fad1-f21a-4287-b700-09ec7fc20561.png)
 
+We visualize the degree of importance of the XGboost model.
 
+As we had previously estimated in the EDA. The Smoker variable positively influences the price of the medical insurance charge.
+
+Followed by variables such as age and BMI. What are physical health attributes, such as the variable smoker. It makes sense that the price of the insured is higher when they have a worse health condition.
+
+Variables such as the number of children of the insured, as well as gender and region. They do not have as much relevance compared to the variables that describe the person's health.
+
+However, we leave them, since they can complement the value of the predictions. Since as I mentioned earlier, humans only rely on relevant variables, while machines use these variables and complement them with variables that at first glance can be irrelevant. But that positively impact the value of the prediction.
 
 
 
