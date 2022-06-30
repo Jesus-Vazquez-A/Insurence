@@ -146,6 +146,10 @@ Variables such as the number of children of the insured, as well as gender and r
 
 However, we leave them, since they can complement the value of the predictions. Since as I mentioned earlier, humans only rely on relevant variables, while machines use these variables and complement them with variables that at first glance can be irrelevant. But that positively impact the value of the prediction.
 
+* **Results:**  The XGBoost model performs extraordinarily well for smokers and non-smokers, unlike the polynomial model that did not give good results for the group of smokers. It also has the advantage of not requiring data rescaling. Since they work based on decision trees that use mathematical inequalities in the form of questions. At the same time, it is a very fast model since it can be trained by dedicated graphics cards. What can I expect from a very powerful algorithm and winner of several Kaggle competitions.
+
+
+
 
 
 ### GIF Proyect
