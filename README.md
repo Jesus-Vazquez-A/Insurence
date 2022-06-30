@@ -120,9 +120,21 @@ Both models have quite similar metrics. But XGBoost has better results for test 
 
 ![evaluation_plot](https://user-images.githubusercontent.com/85312561/176791917-021c2ae8-229a-4ad1-a922-af9d78040e5d.png)
 
-    
+* **Polynomial Regression**: It gives good predictions for non-smokers, while for smokers it gives moderate estimates.
+
+* **Gradient Boosting**:  It gives good predictions for both groups.
+
+* **XGBoost:**  It has good predictions for both groups. It has a better MSE than Gradient Boosting and is faster when it comes to training. Because it can be trained using GPUs something that will greatly speed up the training.
 
 
+## **Opening the Black Box**
+
+### **Feature Importance**
+
+![bar_features_xgb](https://user-images.githubusercontent.com/85312561/176793014-40f6ef62-4d39-44c9-b02d-acebc4db2268.png)
+
+
+![shap_xgb](https://user-images.githubusercontent.com/85312561/176793018-fbd6fad1-f21a-4287-b700-09ec7fc20561.png)
 
 
 
