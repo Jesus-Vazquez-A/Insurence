@@ -12,23 +12,40 @@
 * Charges  Health insurance price.
 
 
+![charges_histogram](https://user-images.githubusercontent.com/85312561/176960847-5499ecaa-104d-4bcf-be35-ba695dfbafa6.png)
+
+
+
+
 When performing a histogram, we notice the presence of atypical values, that is, values that are out of the norm.
 
 We deduce that these values can have a better explanation if we add more variables.
 
+![smoker_charges](https://user-images.githubusercontent.com/85312561/176960897-71a33ce2-458b-4563-89ff-5043961e616b.png)
+
+
 We create a box and whisker plot where we add the variable smoker. We discovered that it is a variable that greatly influences the price of health insurance.
+
+
+![bmi_smoker](https://user-images.githubusercontent.com/85312561/176960946-0d14daf2-a741-4c9e-9f75-166c54426583.png)
+
 
 We also found that if the user is a smoker and has an advanced BMI. The insurance charge increases more, since the insured will have more charges due to his state of health.
 
 The BMI maintains a linear trend relationship compared to the predicted insurance. That is, one value increases proportionally to the other.
 
+![age_smoker](https://user-images.githubusercontent.com/85312561/176960976-15cc4044-da46-4f2b-bd7c-0af543f4885b.png)
+
+
 The variable age has a strong linear relationship with the variable charges,it does not increase the price of insurance as considerably since most people who smoke are healthier.
+
+#### **Conclusion**
 
 But for the group of non-smokers it has a significant number of outliers, The main challenge will be the treatment of outliers. Since we cannot delete them, due to the amount of data we have, we will have to find an ingenious way to deal with them.
 
 The main challenge will be the treatment of outliers. Since we cannot eliminate them, due to the amount of data we have, we'll have to find an ingenious way to deal with them.
 
-
+For people who have a worse health condition, it has higher medical insurance charges. Unlike those who do not smoke, they usually have a better state of health, as a consequence the insurance charge will be lower.
 
 ### Project composition
 
