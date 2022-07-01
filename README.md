@@ -1,5 +1,9 @@
 # Insurence-Proyect
 
+![medico-640x360](https://user-images.githubusercontent.com/85312561/176962002-f9150158-0b62-4401-a051-ec84e62eacd8.jpg)
+
+
+
 ### Project composition
 
 * **app:** It includes the application code in streamlit, as well as the previously trained model.
