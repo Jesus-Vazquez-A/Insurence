@@ -1,5 +1,15 @@
 # Insurence-Proyect
 
+### Project composition
+
+* **app:** It includes the application code in streamlit, as well as the previously trained model.
+
+* **data:**  It contains the original dataset and the clean dataset, that is, where we preprocessed outliers.
+
+* **doc:**  Documentation in pdf.
+
+* **src:**  Steps for creating the model and the application.
+
 ### Definition of the problem.
 
 ### Features of dataset.
@@ -47,19 +57,7 @@ The main challenge will be the treatment of outliers. Since we cannot eliminate 
 
 For people who have a worse health condition, it has higher medical insurance charges. Unlike those who do not smoke, they usually have a better state of health, as a consequence the insurance charge will be lower.
 
-### Project composition
 
-
-* **Exploratory analysis.**    We understand the nature of data
-
-* **Feature Engineering.**     We remove or transform the outliers.  We transform outliers to missing values and replace them using a linear regression model.
-
-* **Search for the right model.**   We make comparisons between different models. As well as looking for the best combination of parameters. We will use the MSE as a performance metric, since it is less sensitive to outliers and what we are looking for is a model that generalizes well.  We create 3 models: **polynomial regression**, **Gradient Boosting** and **XGBoost**.
-
-
-* **Definitive model.**   Create the best model again. And we save it for later use.
-
-* **App in  Streamlit.**  We use streamlit which is a specialized library for data science. That allows us to create applications easily.
 
 # Project summary.
 
