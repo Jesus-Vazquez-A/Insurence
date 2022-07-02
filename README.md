@@ -71,6 +71,8 @@ Feature engineering consists of dealing with missing values or outliers. Where a
 
 We decided to separate the data into smokers and non-smokers, with the aim of giving the data a better treatment.
 
+### **Treatment of outliers**
+
 We apply the central limit theorem, which is a technique used to establish confidence intervals. That is, to select values that follow a normal trend, it is usually used to eliminate outliers. But in this case we calculate the upper interval and transform to missing value those values that exceed the established interval.
 
 ![age_lm](https://user-images.githubusercontent.com/85312561/177015586-54dafddb-28a5-4b53-b8c0-3c5e87faafbe.png)
