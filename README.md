@@ -73,6 +73,9 @@ We decided to separate the data into smokers and non-smokers, with the aim of gi
 
 We apply the central limit theorem, which is a technique used to establish confidence intervals. That is, to select values that follow a normal trend, it is usually used to eliminate outliers. But in this case we calculate the upper interval and transform to missing value those values that exceed the established interval.
 
+![age_lm](https://user-images.githubusercontent.com/85312561/177015586-54dafddb-28a5-4b53-b8c0-3c5e87faafbe.png)
+
+
 As described above, for non-smokers we observed a linear trend with respect to age and position. And I thought why instead of replacing the missing values before, why not create a linear regression model? Train the model with normal values, to later replace the missing values with new values closer to the original value.
 
 They have a significant advantage over replacing it with a basic statistical measure such as the average and the median. Since it could affect the distribution of the data.
