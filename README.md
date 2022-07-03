@@ -134,7 +134,7 @@ We use the same parameters for XGBoost and Gradient Boosting.
 
 * **MSE:** Mean square error. It measures the average error between the original value and the predicted value.
 
-* **R^2**  : It measures the degree of adjustment of the predictions with respect to the original value. The closer it is to 1, the closer the original value will be.
+* **R²**  : It measures the degree of adjustment of the predictions with respect to the original value. The closer it is to 1, the closer the original value will be.
 
 * **CV:** Cross Validation consists of calculating the generalization average of the model.
 
