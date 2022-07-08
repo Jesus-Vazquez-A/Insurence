@@ -80,15 +80,18 @@ We could create an additional feature, to be able to classify users based on the
 
 ## **Approach**
 
-Feature engineering consists of dealing with missing values or outliers. Where an optimal treatment for such data is found, this step is very important for the performance of the model. Since it is the data that we are going to give to train the model.
+Feature engineering consists of dealing with missing values, outliers or creating new important variables. Where an optimal treatment for such data is found, this step is very important for the performance of the model. Since it is the data that we are going to give to train the model.
 
 We decided to separate the data into smokers and non-smokers, with the aim of giving the data a better treatment.
 
 ### **Treatment of outliers**
 
-We apply the central limit theorem, which is a technique used to establish confidence intervals. That is, to select values that follow a normal trend, it is usually used to eliminate outliers. But in this case we calculate the upper interval and transform to missing value those values that exceed the established interval.
+We apply the central limit theorem, which is a technique used to establish confidence intervals. We use these intervals to create a new important feature, which can explain the outliers.
 
-![age_lm](https://user-images.githubusercontent.com/85312561/177015586-54dafddb-28a5-4b53-b8c0-3c5e87faafbe.png)
+We apply intervals to group based on the cost of health insurance. We divide them into people with less serious medical problems and people with severe medical problems.
+
+![new_feature](https://user-images.githubusercontent.com/85312561/178052366-02da86ab-4e2d-4f3a-850a-6afb3cdfbab0.png)
+
 
 
 As described above, for non-smokers we observed a linear trend with respect to age and position. And I thought why instead of replacing the missing values before, why not create a linear regression model? Train the model with normal values, to later replace the missing values with new values closer to the original value.
