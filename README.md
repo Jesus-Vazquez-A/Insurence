@@ -51,7 +51,14 @@ The BMI maintains a linear trend relationship compared to the predicted insuranc
 ![age_smoker](https://user-images.githubusercontent.com/85312561/176960976-15cc4044-da46-4f2b-bd7c-0af543f4885b.png)
 
 
-The variable age has a strong linear relationship with the variable charges,it does not increase the price of insurance as considerably since most people who smoke are healthier.
+We observe 4 "clusters":
+
+* The first is for healthy people who do not smoke are healthy, as a consequence they do not have severe medical problems.
+People who do not smoke but have significant health problems.
+
+* People who smoke but have a good health condition.
+
+* Users who smoke and have serious medical problems.
 
 #### **Conclusion**
 
