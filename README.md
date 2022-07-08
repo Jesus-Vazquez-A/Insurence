@@ -139,7 +139,13 @@ It has the advantage that it is easy to interpret. It has the disadvantage of re
 Gradient Boosting and XGBoost are some algorithms that belong to this category. These algorithms work using weaker algorithms, usually decision trees. That each time they are improving with respect to the learning rate and the number of estimators,one of the main differences is that XGBoost can be executed through a GPU, something that allows faster training. 
 
 
+## **Ideal Model**
 
+* **Underfitting:** It is due to the lack of variables; therefore, it does not perform well with training and validation data.Due to the lack of variables to consider.
+
+* **Perfect Fit:** The model yielded excellent results for both the training and validation data.
+
+* **Overfitting:** Occurs due to outliers and an excessive number of variables. where the model performs well for the training data. But it is unable to adapt to data that it has never seen.
 
 
 We use the same parameters for XGBoost and Gradient Boosting.
