@@ -148,7 +148,7 @@ We use the same parameters for XGBoost and Gradient Boosting.
 
 ## **Ideal Model**
 
-<img src="https://www.educative.io/api/edpresso/shot/6668977167138816/image/5033807687188480" width="600">
+<img src="https://miro.medium.com/max/1125/1*_7OPgojau8hkiPUiHoGK_w.png" width="600">
 
 * **Underfitting:** It is due to the lack of variables; therefore, it does not perform well with training and validation data.Due to the lack of variables to consider.
 
