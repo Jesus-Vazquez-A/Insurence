@@ -165,7 +165,16 @@ We use the same parameters for XGBoost and Gradient Boosting.
 
 <img src="https://vitalflux.com/wp-content/uploads/2020/12/overfitting-and-underfitting-wrt-model-error-vs-complexity-1024x590.png" width="600">
 
+It consists in finding the ideal number of estimators. Since it makes no sense to use more estimators, if the validation data is not there is a drastic improvement.
 
+
+## **Metric**
+
+<img src="https://vitalflux.com/wp-content/uploads/2020/09/Regression-terminologies-Page-2.png" height="400" width="300">
+
+It measures the average error between the value predicted by the model and the original value.
+
+We will use the MSE (mean square error) as a metric since it is a very sensitive metric with outliers, which gives us a better ideal of the margin of error of the prediction.
 
 ### **Number of Estimators Gradient Boosting**
 
@@ -182,20 +191,15 @@ We use the same parameters for XGBoost and Gradient Boosting.
 
 
 
-### **DataFrame Evualuation**
+### **Final Evualuation**
 
-![df_evaluation](https://user-images.githubusercontent.com/85312561/176791543-faa2d8b6-5f79-47c3-84f0-7f31a1db8b01.png)
+![mse_models](https://user-images.githubusercontent.com/85312561/178056954-55d91e56-9771-45f2-b3b3-8fc75d3b7e59.png)
 
-* **MSE:** Mean square error. It measures the average error between the original value and the predicted value.
 
-* **R²**  : It measures the degree of adjustment of the predictions with respect to the original value. The closer it is to 1, the closer the original value will be.
-
-* **CV:** Cross Validation consists of calculating the generalization average of the model.
-
-Both models have quite similar metrics. But XGBoost has better results for test data, which is the data that matters to us. Since they are values that the model does not use to train, but it makes good predictions.
 
 ### **Graphic Visualization Models.**
 
+![models](https://user-images.githubusercontent.com/85312561/178056698-57d2f5ba-b9da-4a95-b899-bc85e9c6c872.png)
 
 
 
