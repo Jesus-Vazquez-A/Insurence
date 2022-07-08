@@ -120,6 +120,10 @@ Its mathematical formula is the following: $y=mx+b$
 * $x$ represents the variable
 * $x$ the weight of the coefficient
 * $b$ the intercept
+
+
+<img src="https://miro.medium.com/max/928/1*uqZFeQ0MlZ8nhaX2c4bAWw.png" width="600">
+
 But in this case we will use a multiple linear regression model, where the best hyperplane that fits the data will be found. Because we are dealing with 2 or more predictor variables.
 
 The formula is very similar to the simple one with the difference that more coefficients are added accordingly to the number of variables.
