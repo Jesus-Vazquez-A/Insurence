@@ -138,8 +138,17 @@ It has the advantage that it is easy to interpret. It has the disadvantage of re
 
 Gradient Boosting and XGBoost are some algorithms that belong to this category. These algorithms work using weaker algorithms, usually decision trees. That each time they are improving with respect to the learning rate and the number of estimators,one of the main differences is that XGBoost can be executed through a GPU, something that allows faster training. 
 
+We use the same parameters for XGBoost and Gradient Boosting.
+
+
+* **max_depth:**  It refers to the maximum depth of the decision tree. For the first evaluation we use a maximum depth of 2 and in the second of 3.
+* **n_estimators:** Number of decision trees. The range of estimators we used was from 100 to 1000.
+* **learing_rate:** It is the room for improvement for each iteration. We use a learning rate of 0.01
+
 
 ## **Ideal Model**
+
+<img src="https://www.educative.io/api/edpresso/shot/6668977167138816/image/5033807687188480" width="600">
 
 * **Underfitting:** It is due to the lack of variables; therefore, it does not perform well with training and validation data.Due to the lack of variables to consider.
 
@@ -148,12 +157,7 @@ Gradient Boosting and XGBoost are some algorithms that belong to this category. 
 * **Overfitting:** Occurs due to outliers and an excessive number of variables. where the model performs well for the training data. But it is unable to adapt to data that it has never seen.
 
 
-We use the same parameters for XGBoost and Gradient Boosting.
 
-
-* **max_depth:**  It refers to the maximum depth of the decision tree. For the first evaluation we use a maximum depth of 2 and in the second of 3.
-* **n_estimators:** Number of decision trees. The range of estimators we used was from 100 to 1000.
-* **learing_rate:** It is the room for improvement for each iteration. We use a learning rate of 0.01
 
 
 ## **Analysis of Number of Estimators**
