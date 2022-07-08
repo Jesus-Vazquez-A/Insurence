@@ -53,7 +53,7 @@ The BMI maintains a linear trend relationship compared to the predicted insuranc
 
 We observe 4 "clusters":
 
-* The first is for healthy people who do not smoke are healthy, as a consequence they do not have severe medical problems.
+* The first is for healthy people who do not smoke are healthy, as a consequence they do not have severe medical problems.It maintains a linear relationship with age, that is, age is proportional to medical position.
 
 * People who do not smoke but have significant health problems.
 
@@ -94,11 +94,6 @@ We apply intervals to group based on the cost of health insurance. We divide the
 
 
 
-As described above, for non-smokers we observed a linear trend with respect to age and position. And I thought why instead of replacing the missing values before, why not create a linear regression model? Train the model with normal values, to later replace the missing values with new values closer to the original value.
-
-They have a significant advantage over replacing it with a basic statistical measure such as the average and the median. Since it could affect the distribution of the data.
-
-For smokers, since there were few outliers, we decided to replace them with normal values close to the highest values, within the normal range.
 
 
 ## **Model Interpretation**
