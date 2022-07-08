@@ -112,6 +112,21 @@ We create 3 regression algorithms:
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/350px-Linear_regression.svg.png" width="600">
 
 
+A simple linear regression consists of finding the best straight line that fits the set of data.
+
+Its mathematical formula is the following: $y=mx+b$
+
+* $y$ the variable to predict
+* $x$ represents the variable
+* $x$ the weight of the coefficient
+* $b$ the intercept
+But in this case we will use a multiple linear regression model, where the best hyperplane that fits the data will be found. Because we are dealing with 2 or more predictor variables.
+
+The formula is very similar to the simple one with the difference that more coefficients are added accordingly to the number of variables.
+
+It has the advantage that it is easy to interpret. It has the disadvantage of requiring a scale adjustment so that the variables can be compared with each other.
+
+
 * **Ensemble algorithms:** Gradient Boosting and XGBoost are some algorithms that belong to this category. These algorithms work using weaker algorithms, usually decision trees. That each time they are improving with respect to the learning rate and the number of estimators,one of the main differences is that XGBoost can be executed through a GPU, something that allows faster training. 
 
 
