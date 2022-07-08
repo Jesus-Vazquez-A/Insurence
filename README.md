@@ -168,9 +168,9 @@ We use the same parameters for XGBoost and Gradient Boosting.
 It consists in finding the ideal number of estimators. Since it makes no sense to use more estimators, if the validation data is not there is a drastic improvement.
 
 
-## **Metric**
+## **MSE*
 
-<img src="https://vitalflux.com/wp-content/uploads/2020/09/Regression-terminologies-Page-2.png" height="400" width="300">
+<img src="https://vitalflux.com/wp-content/uploads/2020/09/Regression-terminologies-Page-2.png" width="600">
 
 It measures the average error between the value predicted by the model and the original value.
 
@@ -203,11 +203,6 @@ We will use the MSE (mean square error) as a metric since it is a very sensitive
 
 
 
-* **Linear Regression**: It gives good predictions for non-smokers, while for smokers it gives moderate estimates.
-
-* **Gradient Boosting**:  It gives good predictions for both groups.
-
-* **XGBoost:**  It has good predictions for both groups. It has a better MSE than Gradient Boosting and is faster when it comes to training. Because it can be trained using GPUs something that will greatly speed up the training.
 
 
 ### **Opening the Black Box**
