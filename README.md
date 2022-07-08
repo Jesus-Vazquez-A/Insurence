@@ -54,19 +54,25 @@ The BMI maintains a linear trend relationship compared to the predicted insuranc
 We observe 4 "clusters":
 
 * The first is for healthy people who do not smoke are healthy, as a consequence they do not have severe medical problems.
-People who do not smoke but have significant health problems.
+
+* People who do not smoke but have significant health problems.
 
 * People who smoke but have a good health condition.
 
 * Users who smoke and have serious medical problems.
 
+It can be simplified under two conditions. The first where the condition is not so serious and the second is when the case is dedicated.
+
+We could create an additional feature, to be able to classify users based on the degree of health of the user. Since, as we can see in the graph, the quality of health influences the medical position.
+
 #### **Conclusion**
 
-But for the group of non-smokers it has a significant number of outliers, The main challenge will be the treatment of outliers. Since we cannot delete them, due to the amount of data we have, we will have to find an ingenious way to deal with them.
 
-The main challenge will be the treatment of outliers. Since we cannot eliminate them, due to the amount of data we have, we'll have to find an ingenious way to deal with them.
+* The variables that refer to describe some habits and characteristics of users influence the insurance charge.
 
-For people who have a worse health condition, it has higher medical insurance charges. Unlike those who do not smoke, they usually have a better state of health, as a consequence the insurance charge will be lower.
+* We discovered a new hidden characteristic in the dataset when comparing age with the price of insurance based on whether the user smokes or not, we could add another new variable to the problem that refers to the degree of the health problem.
+
+
 
 
 
