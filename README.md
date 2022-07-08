@@ -202,7 +202,22 @@ We will use the MSE (mean square error) as a metric since it is a very sensitive
 ![models](https://user-images.githubusercontent.com/85312561/178056698-57d2f5ba-b9da-4a95-b899-bc85e9c6c872.png)
 
 
+The 3 models are learned to solve the problem. But the most complete model is XGBOOST, since it has a squared error with respect to its competitors.
 
+It has the advantage that it does not need a scale adjustment for numerical variables, it uses the original values since it works based on mathematical inequalities.
+
+##### Mathematical Inequalities
+
+* >(greater)
+
+* >=(greater than or equal)
+
+* <(minor)
+
+* <=(less than or equal)
+
+
+It has the additional advantage that it can use GPUs which will greatly speed up the model training speed.
 
 
 ### **Opening the Black Box**
@@ -215,20 +230,13 @@ We will use the MSE (mean square error) as a metric since it is a very sensitive
 
 
 
-We visualize the degree of importance of the XGboost model.
 
-As we had previously estimated in the EDA. The Smoker variable positively influences the price of the medical insurance charge.
-
-Followed by variables such as age and BMI. What are physical health attributes, such as the variable smoker. It makes sense that the price of the insured is higher when they have a worse health condition.
-
-Variables such as the number of children of the insured, as well as gender and region. They do not have as much relevance compared to the variables that describe the person's health.
-
-However, we leave them, since they can complement the value of the predictions. Since as I mentioned earlier, humans only rely on relevant variables, while machines use these variables and complement them with variables that at first glance can be irrelevant. But that positively impact the value of the prediction.
 
 ## **Results**
 
- The XGBoost model performs extraordinarily well for smokers and non-smokers, unlike the polynomial model that did not give good results for the group of smokers. It also has the advantage of not requiring data rescaling. Since they work based on decision trees that use mathematical inequalities in the form of questions. At the same time, it is a very fast model since it can be trained by dedicated graphics cards. What can I expect from a very powerful algorithm and winner of several Kaggle competitions.
+XGBOOST offers outstanding performance, generalizes very well, easily accomplishes the task of providing robust predictions.
 
+As a curious fact, this type of model is the winner of multiple competitions in Kaggle, which is a kind of social network for data scientists.
 
 
 
