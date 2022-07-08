@@ -170,15 +170,16 @@ We use the same parameters for XGBoost and Gradient Boosting.
 ### **Number of Estimators Gradient Boosting**
 
 
-![n_estimators_gbr](https://user-images.githubusercontent.com/85312561/176790757-27ead64b-ba03-4842-b98b-987c6f0d78cf.png)
+
+![n_estimators_gbr](https://user-images.githubusercontent.com/85312561/178055716-d8cecf8c-677d-41f9-9374-904dedb0a31a.png)
 
 
 
 
 ### **Number of Estimators XGBoost**
 
+![estimators_xgb](https://user-images.githubusercontent.com/85312561/178055748-000ca710-c3d4-456f-8006-2246b6798262.png)
 
-![xgb_estimators](https://user-images.githubusercontent.com/85312561/176790541-625db0aa-d35b-4f37-9bd0-bb8cb4f68293.png)
 
 
 ### **DataFrame Evualuation**
@@ -195,9 +196,10 @@ Both models have quite similar metrics. But XGBoost has better results for test 
 
 ### **Graphic Visualization Models.**
 
-![evaluation_plot](https://user-images.githubusercontent.com/85312561/176791917-021c2ae8-229a-4ad1-a922-af9d78040e5d.png)
 
-* **Polynomial Regression**: It gives good predictions for non-smokers, while for smokers it gives moderate estimates.
+
+
+* **Linear Regression**: It gives good predictions for non-smokers, while for smokers it gives moderate estimates.
 
 * **Gradient Boosting**:  It gives good predictions for both groups.
 
@@ -208,10 +210,11 @@ Both models have quite similar metrics. But XGBoost has better results for test 
 
 ### **Feature Importance**
 
-![bar_features_xgb](https://user-images.githubusercontent.com/85312561/176793014-40f6ef62-4d39-44c9-b02d-acebc4db2268.png)
+![shap_values](https://user-images.githubusercontent.com/85312561/178055788-fcbfef46-e695-4b38-9072-ab7d5b4b0799.png)
+
+![shap_values_2](https://user-images.githubusercontent.com/85312561/178055854-5dbdacf4-b7a5-45cf-a894-9eed14fc34ec.png)
 
 
-![shap_xgb](https://user-images.githubusercontent.com/85312561/176793018-fbd6fad1-f21a-4287-b700-09ec7fc20561.png)
 
 We visualize the degree of importance of the XGboost model.
 
