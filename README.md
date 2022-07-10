@@ -208,14 +208,7 @@ It has the advantage that it does not need a scale adjustment for numerical vari
 
 ##### Mathematical Inequalities
 
-* >(greater)
-
-* >=(greater than or equal)
-
-* <(minor)
-
-* <=(less than or equal)
-
+<img src="https://i.ytimg.com/vi/DNqIOpCGwP8/maxresdefault.jpg" width=500>
 
 It has the additional advantage that it can use GPUs which will greatly speed up the model training speed.
 
