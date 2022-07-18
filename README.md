@@ -215,7 +215,7 @@ It has the advantage that it does not need a scale adjustment for numerical vari
 
 
 
-
+The most significant variables are **smoker** and **medical problem**. Since people with severe problems, the medical cost is much higher than that of a healthy person.
 
 
 
