@@ -213,7 +213,7 @@ It has the advantage that it does not need a scale adjustment for numerical vari
 
 ![shap_values](https://user-images.githubusercontent.com/85312561/178055788-fcbfef46-e695-4b38-9072-ab7d5b4b0799.png)
 
-![shap_values_2](https://user-images.githubusercontent.com/85312561/178055854-5dbdacf4-b7a5-45cf-a894-9eed14fc34ec.png)
+
 
 
 
