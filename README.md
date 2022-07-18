@@ -168,13 +168,11 @@ We use the same parameters for XGBoost and Gradient Boosting.
 It consists in finding the ideal number of estimators. Since it makes no sense to use more estimators, if the validation data is not there is a drastic improvement.
 
 
-## **MSE*
+## **MSE**
 
-<img src="https://vitalflux.com/wp-content/uploads/2020/09/Regression-terminologies-Page-2.png" width="600">
 
 It measures the average error between the value predicted by the model and the original value.
 
-We will use the MSE (mean square error) as a metric since it is a very sensitive metric with outliers, which gives us a better ideal of the margin of error of the prediction.
 
 ### **Number of Estimators Gradient Boosting**
 
@@ -206,11 +204,7 @@ The 3 models are learned to solve the problem. But the most complete model is XG
 
 It has the advantage that it does not need a scale adjustment for numerical variables, it uses the original values since it works based on mathematical inequalities.
 
-##### Mathematical Inequalities
 
-<img src="https://i.ytimg.com/vi/DNqIOpCGwP8/maxresdefault.jpg" width=500>
-
-It has the additional advantage that it can use GPUs which will greatly speed up the model training speed.
 
 
 ### **Opening the Black Box**
