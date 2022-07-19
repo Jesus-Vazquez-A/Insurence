@@ -26,7 +26,8 @@
 * Charges  Health insurance price.
 
 
-![WhatsApp Image 2022-07-18 at 7 57 10 PM](https://user-images.githubusercontent.com/85312561/179643113-6df30a9c-2ac0-4ce4-8bac-1a45d444d581.jpeg)
+
+![charges](https://user-images.githubusercontent.com/85312561/179644208-68ce6412-499f-496e-9359-f9c02ff767ce.png)
 
 
 
@@ -35,10 +36,14 @@ When performing a histogram, we notice the presence of atypical values, that is,
 
 We deduce that these values can have a better explanation if we add more variables.
 
+![smoker](https://user-images.githubusercontent.com/85312561/179644219-751a68fb-2ab8-4bf9-a1df-7eada8ae21ca.png)
 
 
 
 We create a box and whisker plot where we add the variable smoker. We discovered that it is a variable that greatly influences the price of health insurance.
+
+
+![bmi_charges](https://user-images.githubusercontent.com/85312561/179644305-a9e7825d-4fb6-4bf1-9976-fd671b107822.png)
 
 
 
