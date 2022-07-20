@@ -27,8 +27,8 @@
 
 
 
-![charges](https://user-images.githubusercontent.com/85312561/179644208-68ce6412-499f-496e-9359-f9c02ff767ce.png)
 
+![matrix](https://user-images.githubusercontent.com/85312561/180098595-b80831e6-4fe2-42c2-bb93-bdeb99336e56.png)
 
 
 
@@ -36,14 +36,14 @@ When performing a histogram, we notice the presence of atypical values, that is,
 
 We deduce that these values can have a better explanation if we add more variables.
 
-![smoker](https://user-images.githubusercontent.com/85312561/179644219-751a68fb-2ab8-4bf9-a1df-7eada8ae21ca.png)
+
 
 
 
 We create a box and whisker plot where we add the variable smoker. We discovered that it is a variable that greatly influences the price of health insurance.
 
 
-![bmi_charges](https://user-images.githubusercontent.com/85312561/179644305-a9e7825d-4fb6-4bf1-9976-fd671b107822.png)
+
 
 
 
@@ -52,7 +52,7 @@ We also found that if the user is a smoker and has an advanced BMI. The insuranc
 
 The BMI maintains a linear trend relationship compared to the predicted insurance. That is, one value increases proportionally to the other.
 
-![age_smoker](https://user-images.githubusercontent.com/85312561/176960976-15cc4044-da46-4f2b-bd7c-0af543f4885b.png)
+
 
 
 We observe 4 "clusters":
