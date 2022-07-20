@@ -25,8 +25,9 @@
 * Smoker  Whether the user smokes or not.
 * Charges  Health insurance price.
 
+![matrix](https://user-images.githubusercontent.com/85312561/180099170-44ac5926-295a-42c1-9b05-5efebfc8daa0.png)
 
-![matrix](https://user-images.githubusercontent.com/85312561/180098920-3f30a022-15a4-4627-ae38-1e986d061b3c.png)
+
 
 
 
