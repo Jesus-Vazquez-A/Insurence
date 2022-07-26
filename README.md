@@ -239,4 +239,4 @@ As a curious fact, this type of model is the winner of multiple competitions in 
 
 ### Link app
 
-https://insurence-app-predict.herokuapp.com/
+https://jesus-vazquez-a-insurence-app-streamlit-app-insurence-rbv8gd.streamlitapp.com/
