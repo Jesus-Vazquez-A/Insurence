@@ -193,7 +193,8 @@ It measures the average error between the value predicted by the model and the o
 
 
 
-![estimators_xgb](https://user-images.githubusercontent.com/85312561/181408473-bc022075-a5e1-4fdd-b981-c29df5cb940f.png)
+![estimators_xgb](https://user-images.githubusercontent.com/85312561/181408834-48f68c5c-34de-42d3-8aec-73bcf5c5eda4.png)
+
 
 
 
