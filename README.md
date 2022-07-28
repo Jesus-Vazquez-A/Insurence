@@ -183,14 +183,18 @@ It measures the average error between the value predicted by the model and the o
 
 
 
-![n_estimators_gbr](https://user-images.githubusercontent.com/85312561/178055716-d8cecf8c-677d-41f9-9374-904dedb0a31a.png)
+![estimators_gbr](https://user-images.githubusercontent.com/85312561/181408444-955a2740-2592-434e-8450-c8ce9d3cd51f.png)
+
 
 
 
 
 ### **Number of Estimators XGBoost**
 
-![estimators_xgb](https://user-images.githubusercontent.com/85312561/178055748-000ca710-c3d4-456f-8006-2246b6798262.png)
+
+
+![estimators_xgb](https://user-images.githubusercontent.com/85312561/181408473-bc022075-a5e1-4fdd-b981-c29df5cb940f.png)
+
 
 
 
